@@ -34,7 +34,7 @@ ul li {
 .menuu{
     display: inline-block;
     padding: 20px;
-    background-color: #444444;
+    background-color: #B48D53;
     color: #F5F5F5;
 }
 .menuu__item{
@@ -63,11 +63,29 @@ ul li {
     color: #ffffff;
 }
 
+.textart2{
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to right, #B48D53 , rgb(0, 0, 0));
+    font-size: 14px;
+    font-family: Open Sans,Arial,sans-serif;
+    padding: 20px;
+    color: #ffffff;
+}
+
 .titleart{    font-weight: bold;
     font-family: 'Roboto', sans-serif;
     display: inline-block;
     padding: 32px;
     color: #B99763;
+}
+
+.titleart2{    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    padding: 32px;
+    color: #B99763;
+    background-image: linear-gradient(to right, #B48D53 , rgb(0, 0, 0));
 }
 
 #contenedor {
@@ -129,6 +147,10 @@ section#mine {
 
 img{
     width: 100%;
+}
+
+img:hover{
+    filter: saturate(180%);
 }
 
 
