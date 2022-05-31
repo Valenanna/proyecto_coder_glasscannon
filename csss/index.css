@@ -1,0 +1,139 @@
+* {
+    margin: 30;
+    padding: 0;
+    border: #9a5f00;
+
+}
+
+
+a {
+    text-decoration: none;
+}
+
+a{
+    color: #FFEFD3;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    padding: 20px;
+    background-color: #444444;
+    color: #F5F5F5;
+}
+
+
+
+ul li {
+    display: inline-block;
+    padding: 20px;
+    background-color: #B48D53;
+    color: #FFFFFF;
+}
+
+.menuu{
+    display: inline-block;
+    padding: 20px;
+    background-color: #444444;
+    color: #F5F5F5;
+}
+.menuu__item{
+    display: inline-block;
+    padding: 20px;
+    background-color: #444444;
+    color: #F5F5F5;
+    text-decoration: line-through;
+}
+
+.footer {
+    display: inline-block;
+    padding: 20px;
+    background-color: #ADB6C4;
+    color: #000;
+
+}
+
+.textart{
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+
+    font-size: 14px;
+    font-family: Open Sans,Arial,sans-serif;
+    padding: 20px;
+    color: #ffffff;
+}
+
+.titleart{    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    padding: 32px;
+    color: #B99763;
+}
+
+#contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#contenedor > div {
+    width: 50%;
+    flex-basis: 475px;
+}
+
+
+.grid-area{
+    display: grid;
+    margin: 5px;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill,minmax(250px,200px));
+    grid-template-areas: 
+    "hades cuphead hollow"
+    "souls resident mine"
+    
+}
+
+header {
+    grid-area: header;
+}
+
+section#souls {
+
+    grid-area: souls
+}
+
+section#resident {
+
+    grid-area: resident
+}
+
+section#hollow {
+
+    grid-area: hollow
+}
+
+section#cuphead {
+
+    grid-area: cuphead
+}
+
+section#hades {
+
+    grid-area: hades
+}
+
+section#mine {
+
+    grid-area: mine
+}
+
+img{
+    width: 100%;
+}
+
+
+@media (min-width:500px){
+    .grid-area{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
