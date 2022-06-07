@@ -1,5 +1,5 @@
 * {
-    margin: 30;
+    margin: 0;
     padding: 0;
     border: #9a5f00;
 
@@ -22,13 +22,21 @@ h1{
     color: #F5F5F5;
 }
 
-
-
 ul li {
     display: inline-block;
     padding: 20px;
     background-color: #B48D53;
     color: #FFFFFF;
+}
+
+.header{
+    background-color: #444444;
+    position: sticky;top: 0;
+}
+
+.Menu{
+    display: inline-block;
+    justify-items: center;
 }
 
 .menuu{
@@ -40,17 +48,24 @@ ul li {
 .menuu__item{
     display: inline-block;
     padding: 20px;
-    background-color: #444444;
+    background-color: #B48D53;
     color: #F5F5F5;
     text-decoration: line-through;
 }
 
 .footer {
-    display: inline-block;
+    display: flex;
     padding: 20px;
-    background-color: #ADB6C4;
+    background-color: #4A4031;
     color: #000;
+    position: absolute;
+    bottom: 0;
+    justify-content: center;
 
+}
+
+.botones{
+    justify-items: center;
 }
 
 .textart{
@@ -73,6 +88,25 @@ ul li {
     color: #ffffff;
 }
 
+.textart3{
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-family: Open Sans,Arial,sans-serif;
+    padding: 20px;
+    color: #9a5f00;
+}
+
+.textart4{
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-family: Open Sans,Arial,sans-serif;
+    padding: 20px;
+    color: #ffffff;
+
+}
+
 .titleart{    font-weight: bold;
     font-family: 'Roboto', sans-serif;
     display: inline-block;
@@ -88,8 +122,20 @@ ul li {
     background-image: linear-gradient(to right, #B48D53 , rgb(0, 0, 0));
 }
 
+.titleart3{    
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    padding: 32px;
+    color: #ffffff;
+    font-size: 35px;
+    display: grid;
+    justify-items: center;
+}
+
 #contenedor {
     display: flex;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -99,8 +145,75 @@ ul li {
     flex-basis: 475px;
 }
 
+.box__info {
+    padding: var(--spacing-medium);
+    display: flex;
+    flex-direction: column;
+    gap:var(--spacing-xsmall)
+}
+
+.box__title{
+    font-family: var(--font-title);
+    color: var(--primary);
+    font-size: var(--text-medium);
+}
+
+.box__subtitle {
+    color: var(--secondary);
+    font-size: var(--text-small);
+}
+
+.box__text{
+    color: var(--text-color);
+    font-size: var(--text-base)
+    
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 clamp(250px, 100%, 400px);
+}
+
 
 .grid-area{
+    display: grid;
+    justify-items: center;
+    margin: 5px;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill,minmax(250px,200px));
+    grid-template-areas: 
+    "hades cuphead hollow"
+    "souls resident mine"
+    
+}
+
+.grid-area2{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill,minmax(250px,200px));
+    grid-template-areas: 
+    "texto1 texto2 "
+    "texto3 texto4 "
+    
+}
+
+.grid-area3{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill,minmax(250px,200px));
+    grid-template-areas: 
+    "texto1 texto2 "
+    "texto3 texto4 "
+    
+}
+
+.grid-areaaa{
+    max-width: 400px;
     display: grid;
     margin: 5px;
     gap: 1rem;
@@ -110,6 +223,8 @@ ul li {
     "souls resident mine"
     
 }
+
+
 
 header {
     grid-area: header;
@@ -146,6 +261,7 @@ section#mine {
 }
 
 img{
+    border-radius: 5px 5px 0 0;
     width: 100%;
 }
 
@@ -158,4 +274,27 @@ img:hover{
     .grid-area{
         grid-template-columns: repeat(3, 1fr);
     }
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    background-color: #242424;
+    max-width: 400px;
+    
+    
+    
+
+}
+
+  /* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+  /* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
 }
